@@ -14,81 +14,102 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #f5f5f5;
+      background-color: #F5F5DC; /* Beige */
+      color: #1a1a1a;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
       min-height: 100vh;
       padding: 40px 20px;
     }
 
     img.logo {
-      width: 200px;
+      width: 220px;
       height: auto;
       margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
       text-align: center;
       margin-bottom: 20px;
       letter-spacing: 1px;
     }
 
     .important-message {
-      background-color: #b71c1c;
-      color: #fff;
+      background-color: #c62828;
+      color: #ffffff;
       border-radius: 8px;
-      padding: 20px;
-      max-width: 650px;
+      padding: 22px;
+      max-width: 720px;
       text-align: center;
       font-size: 1rem;
-      line-height: 1.5;
-      margin-bottom: 30px;
+      line-height: 1.6;
+      margin-bottom: 40px;
     }
 
     .description {
-      max-width: 650px;
-      text-align: center;
-      margin-bottom: 20px;
-      line-height: 1.6;
-      font-size: 1.1rem;
+      max-width: 720px;
+      text-align: left;
+      margin-bottom: 22px;
+      line-height: 1.7;
+      font-size: 1.05rem;
     }
   </style>
 </head>
 <body>
 
- 
-  <img src="NoBgMascot.png" alt="11 Mixtape Logo" class="logo">
+  <!-- Logo -->
+  <img src="NoBgMascot.png" alt="11 Mixtape Mascot" class="logo">
 
-
+  <!-- Título -->
   <h1>11 Mixtape</h1>
 
-
+  <!-- Mensaje importante -->
   <div class="important-message">
-    ⚠️ Warning: This project is being developed by a teenager with basic experience. 
-    The kernel is experimental. Expect bugs, errors, and confusion. Use at your own 
-    risk. This is not maintained by a professional team or adult experts.
+    ⚠️ Important notice: 11 Mixtape is being developed by a teenager with basic technical
+    knowledge, not by a professional team or experienced kernel engineers. This project
+    is experimental, unstable, and currently under very early development. Expect bugs,
+    missing features, design mistakes, and confusion. Use at your own risk.
   </div>
 
-
+  <!-- Descripción larga -->
   <p class="description">
-    11 Mixtape is an experimental kernel project designed to explore the foundations of 
-    secure and minimal operating system design. Unlike traditional kernels, it focuses 
-    on fortification, deliberate isolation, and explicit tradeoffs rather than broad 
-    compatibility or convenience. Users can experiment with its early design and 
-    learn from its architecture, but the system is highly experimental, may contain 
-    bugs, and should not be used as a primary operating system.
+    11 Mixtape is an experimental operating system kernel project focused on learning,
+    exploration, and gradual development of a fortified and security-oriented system.
+    The goal is not to compete with existing kernels, but to explore alternative design
+    decisions, minimalism, and security tradeoffs while building something usable over
+    time.
   </p>
 
   <p class="description">
-    The kernel aims to provide a platform for understanding how minimal, security-focused 
-    systems behave. It includes a basic shell and package manager as a starting point, 
-    and future versions may expand toward more complex features like sound support or 
-    desktop environments. Every aspect of development is openly documented, but the 
-    project is maintained solely by a single developer.
+    The kernel is currently in an extremely early stage of development. At this point,
+    it is closer to a concept and architectural foundation than a functional operating
+    system. Many core components are still being planned, redesigned, or not implemented
+    at all. Progress will be slow, incremental, and sometimes paused for long periods.
+    This is expected and intentional.
+  </p>
+
+  <p class="description">
+    Planned features include a minimal custom shell, a simple package management system,
+    and built-in utilities focused on security-related use cases. Future versions aim
+    to gradually introduce tools for basic pentesting, forensic analysis, and networking,
+    alongside system hardening techniques intended to reduce attack surface and improve
+    isolation.
+  </p>
+
+  <p class="description">
+    Compatibility with more complex components such as sound systems, graphical interfaces,
+    or desktop environments is not a current priority, but may be explored in later stages
+    depending on the maturity of the kernel and available resources. All features are
+    planned to arrive progressively through versions, updates, and patches rather than
+    all at once.
+  </p>
+
+  <p class="description">
+    11 Mixtape exists as a long-term learning project. It values transparency, experimentation,
+    and patience over polish or performance. Users interested in following the project
+    should expect an evolving system shaped by trial, error, and iteration.
   </p>
 
 </body>
