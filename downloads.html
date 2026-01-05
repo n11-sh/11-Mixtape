@@ -17,46 +17,60 @@
       padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 30px;
-      text-align: center;
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 40px;
     }
 
     .nav-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #333;
+      background-color: #b71c1c;
       color: #fff;
-      padding: 10px 16px;
-      border-radius: 5px;
+      padding: 12px 18px;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 0.9rem;
-      transition: background-color 0.2s;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
     }
 
     .nav-button:hover {
-      background-color: #555;
+      background-color: #d32f2f;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      color: #b71c1c;
     }
 
     .description {
-      max-width: 700px;
-      text-align: center;
-      margin-bottom: 30px;
-      line-height: 1.6;
+      max-width: 780px;
+      text-align: justify;
+      margin-bottom: 28px;
+      line-height: 1.8;
       font-size: 1.05rem;
+      background-color: #fff8f0;
+      padding: 18px 22px;
+      border-left: 6px solid #b71c1c;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     }
 
     .download-button {
       background-color: #999;
       color: #fff;
-      padding: 12px 20px;
-      border-radius: 5px;
-      font-size: 1rem;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 1.05rem;
       border: none;
       cursor: not-allowed;
       opacity: 0.6;
+      margin-bottom: 40px;
     }
 
     .footer {
@@ -64,13 +78,16 @@
       margin-bottom: 20px;
       text-align: center;
       font-weight: bold;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      color: #5d4037;
     }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="nav-button">Home</a>
+  <header>
+    <a href="index.html" class="nav-button">Home</a>
+  </header>
 
   <h1>Downloads</h1>
 
