@@ -27,3 +27,6 @@ clearly distinguished.
 This repository is **only** for the official website and related assets.
 Kernel development will be handled separately.
 
+**© Copyright 11 Mixtape 2026
+Any fork or redistribution must include this copyright notice.**
+
