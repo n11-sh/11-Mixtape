@@ -3,107 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>11 Mixtape - Downloads</title>
+  <title>11 Mixtape – Downloads</title>
   <link rel="icon" type="image/png" href="11MixtapeFavicon.png">
   <style>
+    /* MISMO CSS BASE */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #F5F5DC;
       color: #1a1a1a;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
     }
-
-    header {
+    nav {
       width: 100%;
+      background-color: #fff8f0;
+      padding: 16px;
       display: flex;
-      justify-content: flex-end;
-      gap: 12px;
-      margin-bottom: 40px;
+      justify-content: center;
+      gap: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
     }
-
-    .nav-button {
+    nav a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 999px;
       background-color: #b71c1c;
       color: #fff;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1rem;
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
     }
-
-    .nav-button:hover {
-      background-color: #d32f2f;
-      transform: scale(1.05);
-    }
-
-    h1 {
-      font-size: 2.6rem;
+    main {
+      max-width: 800px;
+      padding: 50px 20px;
       text-align: center;
-      margin-bottom: 30px;
-      letter-spacing: 2px;
-      color: #b71c1c;
     }
-
-    .description {
-      max-width: 780px;
-      text-align: justify;
-      margin-bottom: 28px;
-      line-height: 1.8;
-      font-size: 1.05rem;
+    .card {
       background-color: #fff8f0;
-      padding: 18px 22px;
-      border-left: 6px solid #b71c1c;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      padding: 26px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      line-height: 1.8;
+      margin-bottom: 30px;
     }
-
-    .download-button {
-      background-color: #999;
-      color: #fff;
-      padding: 14px 24px;
-      border-radius: 8px;
-      font-size: 1.05rem;
+    button {
+      padding: 14px 30px;
+      border-radius: 999px;
       border: none;
+      background-color: #999;
+      color: white;
+      font-size: 1rem;
       cursor: not-allowed;
       opacity: 0.6;
-      margin-bottom: 40px;
     }
-
-    .footer {
+    footer {
       margin-top: auto;
-      margin-bottom: 20px;
-      text-align: center;
+      padding: 20px;
       font-weight: bold;
-      font-size: 0.95rem;
-      color: #5d4037;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <a href="concept.html" class="nav-button">Concept</a>
-    <a href="index.html" class="nav-button">Home</a>
-  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="concept.html">Concept</a>
+    <a href="architectures.html">Architectures</a>
+    <a href="mascot.html">Mascot</a>
+  </nav>
 
-  <h1>Downloads</h1>
+  <main>
+    <div class="card">
+      Downloads are not yet available. 11 Mixtape is still in an early conceptual stage.
+    </div>
+    <button disabled>Download ISO (Coming Soon)</button>
+  </main>
 
-  <p class="description">
-    This page will provide official downloads of 11 Mixtape ISO images in the future.
-    The kernel is currently in an extremely early stage of development, so no stable
-    downloads are available yet.
-  </p>
-
-  <button class="download-button" disabled>Download ISO (Coming Soon)</button>
-
-  <div class="footer">
-    © <b>11 Mixtape 2026</b> - <b>All forks or derivative works must retain this copyright notice</b>
-  </div>
+  <footer>
+    © 11 Mixtape 2026
+  </footer>
 
 </body>
 </html>
