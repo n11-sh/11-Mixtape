@@ -23,6 +23,7 @@
       justify-content: center;
       gap: 14px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      z-index: 10;
     }
 
     nav a {
@@ -32,39 +33,82 @@
       background-color: #B71C1C;
       color: #fff;
       font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #D32F2F;
+      transform: scale(1.05);
     }
 
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
-      padding: 70px 20px;
+      padding: 60px 20px;
+    }
+
+    h1 {
       text-align: center;
+      font-size: 2.6rem;
+      color: #B71C1C;
+      margin-bottom: 20px;
+    }
+
+    .notice {
+      background-color: #C62828;
+      color: white;
+      padding: 22px;
+      border-radius: 14px;
+      text-align: center;
+      line-height: 1.7;
+      margin-bottom: 50px;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
     .card {
       background-color: #FFF8F0;
       padding: 30px;
       border-radius: 16px;
-      margin-bottom: 30px;
-      line-height: 1.8;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
-    button {
-      padding: 16px 36px;
-      border-radius: 999px;
+    .card h2 {
+      color: #8B1E1E;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
       border: none;
       background-color: #999;
       color: white;
       font-size: 1rem;
+      font-weight: bold;
       cursor: not-allowed;
       opacity: 0.6;
+      margin-top: 10px;
     }
 
     footer {
+      margin-top: 60px;
       text-align: center;
       font-weight: bold;
-      padding: 30px;
+      font-size: 0.95rem;
       color: #5D4037;
     }
   </style>
@@ -72,26 +116,55 @@
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="downloads.html">Downloads</a>
-    <a href="concept.html">Concept</a>
-    <a href="architectures.html">Architectures</a>
-    <a href="mascot.html">Mascot</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="concept.html">Concept</a>
+  <a href="architectures.html">Architectures</a>
+  <a href="mascot.html">Mascot</a>
+</nav>
 
-  <main>
-    <div class="card">
-      Official downloads will appear here once the first experimental builds exist.
-      There is currently no ISO available.
-    </div>
+<main>
 
-    <button disabled>Download ISO (Coming Soon)</button>
-  </main>
+<h1>Downloads</h1>
 
-  <footer>
-    © 11 Mixtape 2026
-  </footer>
+<div class="notice">
+  No public builds are available yet.  
+  11 Mixtape is still in an extremely early stage.  
+  Download buttons will remain disabled until a minimally safe build exists.
+</div>
+
+<div class="columns">
+
+  <div class="card">
+    <h2>x86_64</h2>
+    <p>
+      Planned primary architecture.  
+      Development, testing, and early experimentation will start here.
+    </p>
+    <button class="download-btn" disabled>
+      Download ISO (x86_64) – Coming Soon
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>ARM64</h2>
+    <p>
+      Planned secondary architecture.  
+      Support will arrive later, once core systems stabilize.
+    </p>
+    <button class="download-btn" disabled>
+      Download Image (ARM64) – Coming Soon
+    </button>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  © 11 Mixtape 2026 – All forks or derivative works must retain this notice
+</footer>
 
 </body>
 </html>
