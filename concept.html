@@ -6,214 +6,147 @@
   <title>11 Mixtape – Concept & Philosophy</title>
   <link rel="icon" type="image/png" href="11MixtapeFavicon.png">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #F5F5DC;
       color: #1a1a1a;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #FFF8F0;
+      padding: 16px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
+      justify-content: center;
+      gap: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      z-index: 10;
     }
 
-    .nav-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #333;
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 5px;
+    nav a {
       text-decoration: none;
-      font-size: 0.9rem;
-      transition: background-color 0.2s;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background-color: #B71C1C;
+      color: #fff;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.3s;
     }
 
-    .nav-button:hover {
-      background-color: #555;
+    nav a:hover {
+      background-color: #D32F2F;
+      transform: scale(1.05);
     }
 
-    img.logo {
-      width: 160px;
-      height: auto;
-      margin-bottom: 20px;
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
       text-align: center;
+      font-size: 2.8rem;
+      color: #B71C1C;
+      margin-bottom: 40px;
+    }
+
+    .alert {
+      background-color: #C62828;
+      color: white;
+      padding: 24px;
+      border-radius: 14px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .card {
+      background-color: #FFF8F0;
+      padding: 28px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      line-height: 1.85;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     h2 {
-      font-size: 1.4rem;
-      margin: 40px 0 12px;
-      color: #8b1e1e;
+      color: #8B1E1E;
+      margin-bottom: 12px;
     }
 
-    .content {
-      max-width: 800px;
-      line-height: 1.75;
-      font-size: 1.05rem;
-      text-align: left;
-    }
-
-    .important-message {
-      background-color: #c62828;
-      color: #ffffff;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 30px 0;
-      text-align: center;
-      font-size: 1rem;
-    }
-
-    .footer {
-      margin-top: auto;
-      margin-bottom: 20px;
+    footer {
       text-align: center;
       font-weight: bold;
-      font-size: 0.9rem;
+      padding: 30px;
+      color: #5D4037;
     }
   </style>
 </head>
+
 <body>
 
-  <a href="index.html" class="nav-button">Home</a>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="concept.html">Concept</a>
+  <a href="architectures.html">Architectures</a>
+  <a href="mascot.html">Mascot</a>
+</nav>
 
-  <img src="NoBgMascot.png" alt="11 Mixtape Mascot" class="logo">
+<main>
 
-  <h1>Concept & Philosophy</h1>
+<h1>Concept & Philosophy</h1>
 
-  <div class="important-message">
-    11 Mixtape is an experimental and early-stage project. This page describes design goals,
-    philosophical direction, and theoretical systems. Nothing here should be interpreted
-    as a finished or guaranteed feature.
-  </div>
+<div class="alert">
+  This page describes ideas, intentions, and long-term goals.  
+  Nothing here is guaranteed, finished, or stable.
+</div>
 
-  <div class="content">
+<div class="card">
+  <h2>What is 11 Mixtape?</h2>
+  11 Mixtape is an experimental operating system kernel focused on security,
+  restriction, and architectural clarity. It exists as a learning project,
+  not as a replacement for existing operating systems.
+</div>
 
-    <h2>What is 11 Mixtape?</h2>
-    <p>
-      11 Mixtape is an experimental operating system kernel project built around a single,
-      uncompromising principle: security must be the foundation, not an afterthought.
-      Instead of assuming trust and reacting to threats later, 11 Mixtape treats distrust
-      as the default state of the system.
-    </p>
+<div class="card">
+  <h2>Security Before Comfort</h2>
+  Unlike mainstream systems, 11 Mixtape treats inconvenience as acceptable.
+  Reduced compatibility, blocked behavior, and limited freedom are deliberate
+  design choices when they improve system integrity.
+</div>
 
-    <p>
-      The project exists as a long-term learning and research effort. It explores how far
-      a system can be intentionally hardened, restricted, and isolated while still
-      remaining usable by a human being, not just a terminal.
-    </p>
+<div class="card">
+  <h2>Limited Daily Use</h2>
+  While originally designed as a security-focused system, future versions may
+  support limited daily use: a graphical environment, basic web browsing,
+  media playback, and visual customization (ricing).  
+  Gaming support will remain minimal and experimental.
+</div>
 
-    <h2>Security First, Usability Second</h2>
-    <p>
-      Most modern operating systems prioritize convenience, compatibility, and freedom,
-      then attempt to patch security problems as they appear. 11 Mixtape deliberately
-      reverses this logic.
-    </p>
+<div class="card">
+  <h2>11-Frontier</h2>
+  11-Frontier is a theoretical security boundary that analyzes files before they
+  enter the internal system. Suspicious files are blocked, isolated, or deleted
+  automatically. Trust is never assumed.
+</div>
 
-    <p>
-      Restrictions are not accidents or unfinished work. They are conscious design
-      decisions. If a feature increases attack surface, complexity, or uncertainty, it
-      may be limited or removed entirely, even if that choice breaks compatibility with
-      common software.
-    </p>
+<div class="card">
+  <h2>11-Medkit</h2>
+  11-Medkit is a planned emergency system designed to respond to compromises,
+  infections, or unexpected behavior. Its goal is containment and recovery,
+  not perfect detection.
+</div>
 
-    <h2>Daily Use, but on Purpose</h2>
-    <p>
-      Unlike many security-focused systems, 11 Mixtape does not completely reject daily
-      usability. In the future, it may support a graphical environment, basic browsing,
-      media consumption, and a visually customizable desktop experience.
-    </p>
+</main>
 
-    <p>
-      This daily usage is intentionally limited. The system is not designed for heavy
-      gaming, large proprietary platforms, or complex consumer ecosystems. Its goal is to
-      allow normal activity without turning the system into an uncontrolled attack surface.
-    </p>
-
-    <p>
-      Customization, theming, and desktop "ricing" may be supported, as long as these
-      changes do not compromise system integrity or security boundaries.
-    </p>
-
-    <h2>Target Users</h2>
-    <p>
-      11 Mixtape is designed for ethical hackers, cybersecurity learners, forensic
-      researchers, and privacy-focused users who want a system that actively resists
-      compromise.
-    </p>
-
-    <p>
-      It is also intended for highly paranoid users who want a secure daily system without
-      constantly worrying about spyware, hidden behavior, or silent background processes.
-      The system assumes the user prefers limits over uncertainty.
-    </p>
-
-    <h2>11-Frontier: Theoretical File System Barrier</h2>
-    <p>
-      11-Frontier is a core theoretical concept within 11 Mixtape. It represents a strict
-      boundary between external or newly introduced files and the internal system
-      environment.
-    </p>
-
-    <p>
-      Any file, package, or executable attempting to enter the system would be analyzed
-      before being granted access. If it fails integrity checks or appears suspicious,
-      it may be blocked, isolated outside the internal filesystem, or automatically
-      removed after a defined period.
-    </p>
-
-    <p>
-      In this model, files are never trusted by default, even when intentionally installed
-      by the user.
-    </p>
-
-    <h2>11-Medkit: Emergency Response Concept</h2>
-    <p>
-      11-Medkit is a planned emergency response mechanism designed for situations where
-      prevention fails. Its purpose is containment, recovery, and system survival.
-    </p>
-
-    <p>
-      Rather than acting as a traditional antivirus, 11-Medkit would focus on integrity
-      verification, isolation of compromised components, and neutralization of threats
-      already inside the system.
-    </p>
-
-    <h2>Development Philosophy</h2>
-    <p>
-      11 Mixtape is developed slowly and deliberately. Design, documentation, and planning
-      take priority over writing code. Redesigns, dead ends, and discarded ideas are an
-      expected part of the process.
-    </p>
-
-    <p>
-      The project is maintained by an individual, not a professional team. Limitations and
-      mistakes are acknowledged openly rather than hidden behind marketing language.
-    </p>
-
-    <h2>Current Status</h2>
-    <p>
-      At present, 11 Mixtape exists primarily as a conceptual and architectural foundation.
-      Most systems described here are theoretical and subject to change as development
-      progresses.
-    </p>
-
-  </div>
-
-  <div class="footer">
-    © <b>11 Mixtape 2025–2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
-  </div>
+<footer>
+  © 11 Mixtape 2026 – All forks must retain this notice
+</footer>
 
 </body>
 </html>
