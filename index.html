@@ -7,160 +7,132 @@
   <link rel="icon" type="image/png" href="11MixtapeFavicon.png">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #F5F5DC;
       color: #1a1a1a;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
     }
 
     nav {
       width: 100%;
-      text-align: right;
-      margin-bottom: 40px;
+      background-color: #fff8f0;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 999px;
       background-color: #b71c1c;
       color: #fff;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 0.95rem;
       font-weight: bold;
-      margin-left: 10px;
+      font-size: 0.95rem;
       transition: background-color 0.3s, transform 0.2s;
     }
 
     nav a:hover {
       background-color: #d32f2f;
-      transform: scale(1.05);
+      transform: translateY(-2px);
+    }
+
+    main {
+      max-width: 900px;
+      padding: 50px 20px;
+      text-align: center;
     }
 
     img.logo {
       width: 240px;
-      height: auto;
       margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
     }
 
     h1 {
       font-size: 3rem;
-      text-align: center;
+      color: #b71c1c;
       margin-bottom: 30px;
       letter-spacing: 2px;
-      color: #b71c1c;
     }
 
-    .important-message {
-      background-color: #c62828;
-      color: #ffffff;
-      border-radius: 12px;
-      padding: 24px 28px;
-      max-width: 780px;
-      text-align: center;
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 50px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .description {
-      max-width: 780px;
-      text-align: justify;
-      margin-bottom: 28px;
-      line-height: 1.8;
-      font-size: 1.05rem;
+    .card {
       background-color: #fff8f0;
-      padding: 18px 22px;
-      border-left: 6px solid #b71c1c;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      padding: 26px;
+      border-radius: 14px;
+      margin-bottom: 26px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: justify;
+      line-height: 1.8;
     }
 
-    .footer {
-      margin-top: 40px;
+    .alert {
+      background-color: #c62828;
+      color: white;
       text-align: center;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
       font-weight: bold;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: #5d4037;
     }
   </style>
 </head>
 
-<body role="document">
+<body>
 
-  <nav aria-label="Main navigation">
+  <nav>
     <a href="index.html">Home</a>
     <a href="downloads.html">Downloads</a>
     <a href="concept.html">Concept</a>
     <a href="architectures.html">Architectures</a>
+    <a href="mascot.html">Mascot</a>
   </nav>
 
-  <main role="main">
+  <main>
 
-    <img src="NoBgMascot.png" alt="11 Mixtape project mascot logo" class="logo">
-
+    <img src="NoBgMascot.png" alt="11 Mixtape mascot" class="logo">
     <h1>11 Mixtape</h1>
 
-    <div class="important-message" role="alert">
-      ⚠️ Important notice: 11 Mixtape is being developed by a teenager with basic technical
-      knowledge, not by a professional team or experienced kernel engineers. This project
-      is experimental, unstable, and currently under very early development. Expect bugs,
-      missing features, design mistakes, and confusion. Use at your own risk.
+    <div class="card alert">
+      ⚠️ 11 Mixtape is an experimental, early-stage project developed by an individual.
+      Expect instability, missing features, and radical design decisions. Use at your own risk.
     </div>
 
-    <p class="description">
-      11 Mixtape is an experimental operating system kernel project focused on learning,
-      exploration, and the gradual construction of a fortified, security-oriented system.
-      Its goal is not to replace existing operating systems, but to explore how strict
-      security decisions shape usability, flexibility, and long-term system behavior.
-    </p>
+    <div class="card">
+      11 Mixtape is an experimental operating system kernel focused on security-first design,
+      architectural clarity, and intentional limitations.
+    </div>
 
-    <p class="description">
-      The kernel is currently in an extremely early stage of development. At this point,
-      it exists more as a conceptual and architectural foundation than a functional system.
-      Core components are still being designed, revised, or not implemented at all.
-      Progress is expected to be slow, iterative, and sometimes paused entirely.
-    </p>
-
-    <p class="description">
-      Planned features include a minimal custom shell, a simple package management system,
-      and built-in utilities focused on security-related workflows such as pentesting,
-      forensic analysis, and network inspection. These features will be introduced
-      progressively through versions, updates, and patches.
-    </p>
-
-    <p class="description">
-      While 11 Mixtape prioritizes security over convenience, future versions may explore
-      limited daily-use capabilities. This includes optional graphical environments,
-      basic web browsing, media playback, and extensive visual customization
-      ("ricing"). The system is not intended for heavy gaming or performance-demanding
-      workloads. Support for platforms like Steam is unlikely, though lightweight or
-      specialized applications may be explored experimentally.
-    </p>
-
-    <p class="description">
-      11 Mixtape is a long-term learning project built on transparency, experimentation,
-      and patience. It values architectural clarity and security research over polish,
-      speed, or mass adoption.
-    </p>
+    <div class="card">
+      While future versions may support limited daily use such as browsing, media playback,
+      and heavy visual customization (ricing), the system is not intended for gaming or
+      performance-heavy workloads.
+    </div>
 
   </main>
 
-  <div class="footer">
-    © <b>11 Mixtape 2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
-  </div>
+  <footer>
+    © 11 Mixtape 2026 – All forks or derivative works must retain this copyright notice
+  </footer>
 
 </body>
 </html>
