@@ -6,93 +6,87 @@
   <title>11 Mixtape</title>
   <link rel="icon" type="image/png" href="11MixtapeFavicon.png">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #F5F5DC;
       color: #1a1a1a;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     nav {
-      width: 100%;
-      background-color: #fff8f0;
+      position: sticky;
+      top: 0;
+      background-color: #FFF8F0;
       padding: 16px;
       display: flex;
       justify-content: center;
       gap: 14px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
       z-index: 10;
     }
 
     nav a {
       text-decoration: none;
-      padding: 10px 18px;
+      padding: 10px 20px;
       border-radius: 999px;
-      background-color: #b71c1c;
+      background-color: #B71C1C;
       color: #fff;
       font-weight: bold;
-      font-size: 0.95rem;
-      transition: background-color 0.3s, transform 0.2s;
+      transition: transform 0.2s, background-color 0.3s;
     }
 
     nav a:hover {
-      background-color: #d32f2f;
-      transform: translateY(-2px);
+      background-color: #D32F2F;
+      transform: scale(1.05);
     }
 
     main {
       max-width: 900px;
-      padding: 50px 20px;
+      margin: auto;
+      padding: 60px 20px;
       text-align: center;
     }
 
     img.logo {
-      width: 240px;
-      margin-bottom: 20px;
-      border-radius: 14px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      width: 260px;
+      margin-bottom: 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
     }
 
     h1 {
       font-size: 3rem;
-      color: #b71c1c;
+      color: #B71C1C;
       margin-bottom: 30px;
       letter-spacing: 2px;
     }
 
-    .card {
-      background-color: #fff8f0;
+    .alert {
+      background-color: #C62828;
+      color: white;
       padding: 26px;
       border-radius: 14px;
-      margin-bottom: 26px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      text-align: justify;
-      line-height: 1.8;
+      margin-bottom: 50px;
+      line-height: 1.7;
+      font-weight: 500;
     }
 
-    .alert {
-      background-color: #c62828;
-      color: white;
-      text-align: center;
+    .card {
+      background-color: #FFF8F0;
+      padding: 28px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      text-align: justify;
+      line-height: 1.85;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     footer {
-      margin-top: auto;
-      padding: 20px;
+      text-align: center;
       font-weight: bold;
-      font-size: 0.9rem;
-      color: #5d4037;
+      padding: 30px;
+      color: #5D4037;
     }
   </style>
 </head>
@@ -110,28 +104,36 @@
   <main>
 
     <img src="NoBgMascot.png" alt="11 Mixtape mascot" class="logo">
+
     <h1>11 Mixtape</h1>
 
-    <div class="card alert">
-      ⚠️ 11 Mixtape is an experimental, early-stage project developed by an individual.
-      Expect instability, missing features, and radical design decisions. Use at your own risk.
+    <div class="alert">
+      ⚠️ 11 Mixtape is developed by a teenager with basic technical knowledge.
+      This is an experimental, unstable, and early-stage project. Bugs, design
+      mistakes, and incomplete features are expected. Use at your own risk.
     </div>
 
     <div class="card">
-      11 Mixtape is an experimental operating system kernel focused on security-first design,
-      architectural clarity, and intentional limitations.
+      11 Mixtape is an experimental operating system kernel focused on security,
+      isolation, and long-term learning. It does not aim to replace mainstream
+      systems, but to explore how strict security decisions shape usability.
     </div>
 
     <div class="card">
-      While future versions may support limited daily use such as browsing, media playback,
-      and heavy visual customization (ricing), the system is not intended for gaming or
-      performance-heavy workloads.
+      The kernel is still at a conceptual stage. Core components are being designed,
+      rethought, or not yet implemented. Progress is slow by design.
+    </div>
+
+    <div class="card">
+      Future versions may support limited daily use, including a graphical
+      environment, basic browsing, media playback, and heavy visual customization
+      (ricing). Gaming support will remain extremely limited.
     </div>
 
   </main>
 
   <footer>
-    © 11 Mixtape 2026 – All forks or derivative works must retain this copyright notice
+    © 11 Mixtape 2026 – All forks must retain this notice
   </footer>
 
 </body>
