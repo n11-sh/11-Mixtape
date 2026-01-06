@@ -23,26 +23,25 @@
       padding: 40px 20px;
     }
 
-    header {
+    nav {
       width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      gap: 12px;
+      text-align: right;
       margin-bottom: 40px;
     }
 
-    .nav-button {
+    nav a {
       background-color: #b71c1c;
       color: #fff;
-      padding: 12px 18px;
+      padding: 10px 16px;
       border-radius: 8px;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: bold;
+      margin-left: 10px;
       transition: background-color 0.3s, transform 0.2s;
     }
 
-    .nav-button:hover {
+    nav a:hover {
       background-color: #d32f2f;
       transform: scale(1.05);
     }
@@ -98,40 +97,69 @@
     }
   </style>
 </head>
-<body>
 
-  <header>
-    <a href="concept.html" class="nav-button">Concept</a>
-    <a href="downloads.html" class="nav-button">Downloads</a>
-  </header>
+<body role="document">
 
-  <img src="NoBgMascot.png" alt="11 Mixtape Mascot" class="logo">
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="concept.html">Concept</a>
+    <a href="architectures.html">Architectures</a>
+  </nav>
 
-  <h1>11 Mixtape</h1>
+  <main role="main">
 
-  <div class="important-message">
-    ⚠️ Important notice: 11 Mixtape is being developed by a teenager with basic technical
-    knowledge, not by a professional team or experienced kernel engineers. This project
-    is experimental, unstable, and currently under very early development. Expect bugs,
-    missing features, design mistakes, and confusion. Use at your own risk.
-  </div>
+    <img src="NoBgMascot.png" alt="11 Mixtape project mascot logo" class="logo">
 
-  <p class="description">
-    11 Mixtape is an experimental operating system kernel project focused on learning,
-    exploration, and gradual development of a fortified and security-oriented system.
-    The goal is not to compete with existing kernels, but to explore alternative design
-    decisions, minimalism, and security tradeoffs while building something usable over
-    time.
-  </p>
+    <h1>11 Mixtape</h1>
 
-  <p class="description">
-    The kernel is currently in an extremely early stage of development. At this point,
-    it is closer to a concept and architectural foundation than a functional operating
-    system.
-  </p>
+    <div class="important-message" role="alert">
+      ⚠️ Important notice: 11 Mixtape is being developed by a teenager with basic technical
+      knowledge, not by a professional team or experienced kernel engineers. This project
+      is experimental, unstable, and currently under very early development. Expect bugs,
+      missing features, design mistakes, and confusion. Use at your own risk.
+    </div>
+
+    <p class="description">
+      11 Mixtape is an experimental operating system kernel project focused on learning,
+      exploration, and the gradual construction of a fortified, security-oriented system.
+      Its goal is not to replace existing operating systems, but to explore how strict
+      security decisions shape usability, flexibility, and long-term system behavior.
+    </p>
+
+    <p class="description">
+      The kernel is currently in an extremely early stage of development. At this point,
+      it exists more as a conceptual and architectural foundation than a functional system.
+      Core components are still being designed, revised, or not implemented at all.
+      Progress is expected to be slow, iterative, and sometimes paused entirely.
+    </p>
+
+    <p class="description">
+      Planned features include a minimal custom shell, a simple package management system,
+      and built-in utilities focused on security-related workflows such as pentesting,
+      forensic analysis, and network inspection. These features will be introduced
+      progressively through versions, updates, and patches.
+    </p>
+
+    <p class="description">
+      While 11 Mixtape prioritizes security over convenience, future versions may explore
+      limited daily-use capabilities. This includes optional graphical environments,
+      basic web browsing, media playback, and extensive visual customization
+      ("ricing"). The system is not intended for heavy gaming or performance-demanding
+      workloads. Support for platforms like Steam is unlikely, though lightweight or
+      specialized applications may be explored experimentally.
+    </p>
+
+    <p class="description">
+      11 Mixtape is a long-term learning project built on transparency, experimentation,
+      and patience. It values architectural clarity and security research over polish,
+      speed, or mass adoption.
+    </p>
+
+  </main>
 
   <div class="footer">
-    © <b>11 Mixtape 2026</b> - <b>All forks or derivative works must retain this copyright notice</b>
+    © <b>11 Mixtape 2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
   </div>
 
 </body>
