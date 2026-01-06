@@ -3,142 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>11 Mixtape – Planned Architectures</title>
+  <title>11 Mixtape – Architectures</title>
   <link rel="icon" type="image/png" href="11MixtapeFavicon.png">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #F5F5DC;
       color: #1a1a1a;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #FFF8F0;
+      padding: 16px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
+      justify-content: center;
+      gap: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
-    .nav-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #333;
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 5px;
+    nav a {
       text-decoration: none;
-      font-size: 0.9rem;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background-color: #B71C1C;
+      color: #fff;
+      font-weight: bold;
     }
 
-    img.logo {
-      width: 150px;
-      margin-bottom: 20px;
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 20px;
       text-align: center;
+      font-size: 2.6rem;
+      color: #B71C1C;
+      margin-bottom: 40px;
     }
 
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 35px;
-      margin-bottom: 10px;
-      color: #8b1e1e;
-    }
-
-    .content {
-      max-width: 800px;
-      line-height: 1.75;
-      font-size: 1.05rem;
-    }
-
-    .notice {
-      background-color: #c62828;
-      color: #fff;
-      border-radius: 8px;
-      padding: 18px;
+    .card {
+      background-color: #FFF8F0;
+      padding: 28px;
+      border-radius: 16px;
       margin-bottom: 30px;
-      text-align: center;
+      line-height: 1.85;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    .footer {
-      margin-top: auto;
+    h2 { color: #8B1E1E; }
+
+    footer {
+      text-align: center;
       font-weight: bold;
-      font-size: 0.9rem;
-      margin-bottom: 20px;
+      padding: 30px;
+      color: #5D4037;
     }
   </style>
 </head>
+
 <body>
 
-  <a href="index.html" class="nav-button">Home</a>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="concept.html">Concept</a>
+  <a href="architectures.html">Architectures</a>
+  <a href="mascot.html">Mascot</a>
+</nav>
 
-  <img src="NoBgMascot.png" alt="11 Mixtape Mascot" class="logo">
+<main>
 
-  <h1>Planned Architectures</h1>
+<h1>Planned Architectures</h1>
 
-  <div class="notice">
-    The architectures described here are planned targets, not guaranteed support.
-    Compatibility will be introduced gradually, if technically viable.
-  </div>
+<div class="card">
+  <h2>x86_64</h2>
+  x86_64 is planned as the primary development architecture due to its wide
+  documentation, mature tooling, and availability on standard hardware.
+  It allows easier debugging and experimentation during early stages.
+</div>
 
-  <div class="content">
+<div class="card">
+  <h2>ARM64</h2>
+  ARM64 is planned to support modern low-power devices and future experimentation
+  with mobile, embedded, or alternative hardware.  
+  Supporting ARM early helps design architecture-agnostic core systems.
+</div>
 
-    <h2>Why Architecture Matters</h2>
-    <p>
-      Choosing supported CPU architectures is not a cosmetic decision. Each architecture
-      affects kernel design, security assumptions, memory models, and isolation strategies.
-      11 Mixtape prioritizes architectures that allow strong control, clear documentation,
-      and realistic long-term maintenance.
-    </p>
+<div class="card">
+  <h2>Why These Architectures?</h2>
+  Both architectures represent the present and future of computing.
+  Supporting them allows 11 Mixtape to remain relevant, flexible, and educational
+  without spreading development too thin.
+</div>
 
-    <h2>x86_64</h2>
-    <p>
-      x86_64 is planned as a primary target due to its maturity, extensive documentation,
-      and widespread availability on desktops, laptops, and servers.
-    </p>
+</main>
 
-    <p>
-      Supporting x86_64 allows 11 Mixtape to run on common hardware, test advanced memory
-      protection techniques, and experiment with security-oriented kernel features without
-      severe hardware limitations.
-    </p>
-
-    <h2>ARM64 (AArch64)</h2>
-    <p>
-      ARM64 is planned as a parallel target architecture due to its growing relevance in
-      modern computing, including laptops, mobile devices, and low-power systems.
-    </p>
-
-    <p>
-      Its simpler design, strong privilege separation, and energy efficiency make it an
-      interesting platform for a security-focused system. ARM64 also opens the possibility
-      of running 11 Mixtape on future devices beyond traditional PCs.
-    </p>
-
-    <h2>Future Architectures</h2>
-    <p>
-      Support for additional architectures is not currently planned. Expanding compatibility
-      increases complexity, maintenance burden, and potential security risk.
-    </p>
-
-    <p>
-      New architectures will only be considered if they align with the project's security
-      goals and do not compromise architectural clarity.
-    </p>
-
-  </div>
-
-  <div class="footer">
-    © <b>11 Mixtape 2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
-  </div>
+<footer>
+  © 11 Mixtape 2026
+</footer>
 
 </body>
 </html>
