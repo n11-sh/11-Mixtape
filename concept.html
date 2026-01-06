@@ -93,110 +93,126 @@
   <h1>Concept & Philosophy</h1>
 
   <div class="important-message">
-    11 Mixtape is an experimental and early-stage project. This page describes goals,
-    intentions, and design philosophy, not guaranteed features or finished implementations.
+    11 Mixtape is an experimental and early-stage project. This page describes design goals,
+    philosophical direction, and theoretical systems. Nothing here should be interpreted
+    as a finished or guaranteed feature.
   </div>
 
   <div class="content">
 
     <h2>What is 11 Mixtape?</h2>
     <p>
-      11 Mixtape is an experimental operating system kernel project designed around one
-      central idea: security is more important than convenience. The project exists as
-      a long-term learning effort focused on exploring how far a system can be hardened,
-      restricted, and fortified without relying on traditional assumptions of trust.
+      11 Mixtape is an experimental operating system kernel project built around a single,
+      uncompromising principle: security must be the foundation, not an afterthought.
+      Instead of assuming trust and reacting to threats later, 11 Mixtape treats distrust
+      as the default state of the system.
     </p>
 
     <p>
-      It is not intended to replace existing kernels, nor to compete with mainstream
-      operating systems. Instead, 11 Mixtape explores alternative design decisions,
-      prioritizing isolation, prevention, and system integrity over compatibility,
-      performance, or ease of use.
+      The project exists as a long-term learning and research effort. It explores how far
+      a system can be intentionally hardened, restricted, and isolated while still
+      remaining usable by a human being, not just a terminal.
     </p>
 
-    <h2>Security Before Comfort</h2>
+    <h2>Security First, Usability Second</h2>
     <p>
-      Most operating systems are designed around user convenience first, adding security
-      as an extra layer afterward. 11 Mixtape reverses this logic. Restrictions, friction,
-      and blocked behavior are not considered flaws, but deliberate design choices.
+      Most modern operating systems prioritize convenience, compatibility, and freedom,
+      then attempt to patch security problems as they appear. 11 Mixtape deliberately
+      reverses this logic.
     </p>
 
     <p>
-      If a feature increases attack surface, reduces control, or introduces uncertainty,
-      it may be limited or entirely rejected, even if that decision breaks compatibility
-      with existing software or workflows.
+      Restrictions are not accidents or unfinished work. They are conscious design
+      decisions. If a feature increases attack surface, complexity, or uncertainty, it
+      may be limited or removed entirely, even if that choice breaks compatibility with
+      common software.
+    </p>
+
+    <h2>Daily Use, but on Purpose</h2>
+    <p>
+      Unlike many security-focused systems, 11 Mixtape does not completely reject daily
+      usability. In the future, it may support a graphical environment, basic browsing,
+      media consumption, and a visually customizable desktop experience.
+    </p>
+
+    <p>
+      This daily usage is intentionally limited. The system is not designed for heavy
+      gaming, large proprietary platforms, or complex consumer ecosystems. Its goal is to
+      allow normal activity without turning the system into an uncontrolled attack surface.
+    </p>
+
+    <p>
+      Customization, theming, and desktop "ricing" may be supported, as long as these
+      changes do not compromise system integrity or security boundaries.
     </p>
 
     <h2>Target Users</h2>
     <p>
-      11 Mixtape is primarily designed for users who value security and control over
-      flexibility. This includes ethical hackers, cybersecurity learners, forensic
-      researchers, and highly privacy-conscious users who want to minimize the risk of
-      spyware, malware, or hidden system behavior.
+      11 Mixtape is designed for ethical hackers, cybersecurity learners, forensic
+      researchers, and privacy-focused users who want a system that actively resists
+      compromise.
     </p>
 
     <p>
-      The system is not designed for general-purpose desktop usage, gaming, or everyday
-      consumer workloads. Users are expected to understand and accept its limitations.
+      It is also intended for highly paranoid users who want a secure daily system without
+      constantly worrying about spyware, hidden behavior, or silent background processes.
+      The system assumes the user prefers limits over uncertainty.
     </p>
 
     <h2>11-Frontier: Theoretical File System Barrier</h2>
     <p>
-      One of the core theoretical components of 11 Mixtape is 11-Frontier. This concept
-      describes a strict boundary between external or newly introduced files and the
-      internal system environment.
+      11-Frontier is a core theoretical concept within 11 Mixtape. It represents a strict
+      boundary between external or newly introduced files and the internal system
+      environment.
     </p>
 
     <p>
-      Files and packages attempting to enter the system would be analyzed, filtered, and
-      evaluated before being allowed into the internal filesystem. If deemed suspicious,
-      incompatible, or potentially malicious, they may be isolated, blocked, or removed
-      automatically after a defined period.
+      Any file, package, or executable attempting to enter the system would be analyzed
+      before being granted access. If it fails integrity checks or appears suspicious,
+      it may be blocked, isolated outside the internal filesystem, or automatically
+      removed after a defined period.
     </p>
 
     <p>
-      This approach treats distrust as the default state. Files are not assumed safe
-      simply because they exist or were requested by the user.
+      In this model, files are never trusted by default, even when intentionally installed
+      by the user.
     </p>
 
     <h2>11-Medkit: Emergency Response Concept</h2>
     <p>
-      11-Medkit is a planned emergency-oriented security system intended to respond when
-      a compromise, infection, or unexpected system behavior is detected.
+      11-Medkit is a planned emergency response mechanism designed for situations where
+      prevention fails. Its purpose is containment, recovery, and system survival.
     </p>
 
     <p>
       Rather than acting as a traditional antivirus, 11-Medkit would focus on integrity
-      checks, isolation, neutralization, and recovery. Its goal is not perfect detection,
-      but damage control and containment when prevention fails.
+      verification, isolation of compromised components, and neutralization of threats
+      already inside the system.
     </p>
 
     <h2>Development Philosophy</h2>
     <p>
-      11 Mixtape is developed incrementally, with long pauses and redesigns expected.
-      Progress may be slow, experimental, and sometimes reversed entirely. Stability,
-      polish, and usability are secondary to learning, experimentation, and architectural
-      clarity.
+      11 Mixtape is developed slowly and deliberately. Design, documentation, and planning
+      take priority over writing code. Redesigns, dead ends, and discarded ideas are an
+      expected part of the process.
     </p>
 
     <p>
-      The project is developed by an individual, not a professional team. Mistakes,
-      limitations, and incomplete implementations are part of the process and are
-      acknowledged openly rather than hidden.
+      The project is maintained by an individual, not a professional team. Limitations and
+      mistakes are acknowledged openly rather than hidden behind marketing language.
     </p>
 
     <h2>Current Status</h2>
     <p>
-      At present, 11 Mixtape exists primarily as a concept and early foundation. Most
-      components described here are theoretical or planned, not yet implemented.
-      Development begins with design, documentation, and architectural planning before
-      code.
+      At present, 11 Mixtape exists primarily as a conceptual and architectural foundation.
+      Most systems described here are theoretical and subject to change as development
+      progresses.
     </p>
 
   </div>
 
   <div class="footer">
-    © <b>11 Mixtape 2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
+    © <b>11 Mixtape 2025–2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
   </div>
 
 </body>
