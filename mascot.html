@@ -6,177 +6,109 @@
   <title>11 Mixtape – Mascot</title>
   <link rel="icon" type="image/png" href="11MixtapeFavicon.png">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #F5F5DC;
       color: #1a1a1a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
     }
 
     nav {
-      width: 100%;
-      text-align: right;
-      margin-bottom: 40px;
+      position: sticky;
+      top: 0;
+      background-color: #FFF8F0;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
     nav a {
-      background-color: #b71c1c;
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 8px;
       text-decoration: none;
-      font-size: 0.95rem;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background-color: #B71C1C;
+      color: #fff;
       font-weight: bold;
-      margin-left: 10px;
-      transition: background-color 0.3s, transform 0.2s;
     }
 
-    nav a:hover {
-      background-color: #d32f2f;
-      transform: scale(1.05);
-    }
-
-    img.logo {
-      width: 200px;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 14px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      color: #b71c1c;
-      text-align: center;
-      letter-spacing: 2px;
+      font-size: 2.6rem;
+      color: #B71C1C;
+      margin-bottom: 30px;
     }
 
-    h2 {
-      font-size: 1.5rem;
-      margin: 36px 0 14px;
-      color: #8b1e1e;
+    img {
+      width: 220px;
+      margin-bottom: 30px;
     }
 
-    .content {
-      max-width: 800px;
-      font-size: 1.05rem;
-      line-height: 1.8;
+    .card {
+      background-color: #FFF8F0;
+      padding: 28px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      line-height: 1.85;
       text-align: justify;
-      background-color: #fff8f0;
-      padding: 24px 26px;
-      border-left: 6px solid #b71c1c;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    .highlight {
-      font-weight: bold;
-      color: #b71c1c;
-    }
-
-    .footer {
-      margin-top: auto;
-      margin-bottom: 20px;
+    footer {
       text-align: center;
       font-weight: bold;
-      font-size: 0.95rem;
-      color: #5d4037;
+      padding: 30px;
+      color: #5D4037;
     }
   </style>
 </head>
 
 <body>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="downloads.html">Downloads</a>
-    <a href="concept.html">Concept</a>
-    <a href="architectures.html">Architectures</a>
-    <a href="mascot.html">Mascot</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="concept.html">Concept</a>
+  <a href="architectures.html">Architectures</a>
+  <a href="mascot.html">Mascot</a>
+</nav>
 
-  <img src="NoBgMascot.png" alt="Kira, the 11 Mixtape mascot" class="logo">
+<main>
 
-  <h1>Kira</h1>
+<h1>Kira, the Red Panda</h1>
 
-  <div class="content">
+<img src="NoBgMascot.png" alt="Kira the red panda">
 
-    <h2>Who is Kira?</h2>
-    <p>
-      <span class="highlight">Kira</span> is the official mascot and symbolic face of
-      the 11 Mixtape project. She is not just a decorative character or a branding
-      placeholder, but a visual representation of the philosophy behind the kernel:
-      alert, cautious, resilient, and quietly intelligent.
-    </p>
+<div class="card">
+  Kira is the official mascot of 11 Mixtape. She represents curiosity,
+  caution, and quiet intelligence. Like the system itself, she is calm,
+  observant, and defensive rather than aggressive.
+</div>
 
-    <h2>Why a Red Panda?</h2>
-    <p>
-      The red panda was chosen deliberately. Unlike more common mascots such as wolves,
-      dragons, or penguins, the red panda represents a balance between softness and
-      survival. It is a calm animal, not aggressive by default, yet capable of defending
-      itself when necessary.
-    </p>
+<div class="card">
+  The red panda was chosen not only because the creator deeply loves them,
+  but because they symbolize rarity, gentleness, and survival in hostile
+  environments. A perfect metaphor for a hardened operating system.
+</div>
 
-    <p>
-      This mirrors the design goals of 11 Mixtape. The system is not built to dominate,
-      conquer, or replace everything else. It exists to protect itself, stay contained,
-      and remain vigilant against external threats.
-    </p>
+<div class="card">
+  Kira is not just branding. She reflects the emotional core of the project:
+  a personal system built with care, obsession, and stubborn dedication.
+</div>
 
-    <h2>Symbolism</h2>
-    <p>
-      Kira represents a system that does not blindly trust its environment. Curious, but
-      careful. Friendly, but not naïve. She embodies the idea that security does not have
-      to look hostile or intimidating to be effective.
-    </p>
+</main>
 
-    <p>
-      The calm appearance contrasts with the strict internal rules of the kernel, just
-      as 11 Mixtape may look simple on the surface while enforcing heavy restrictions
-      internally.
-    </p>
-
-    <h2>The Creator’s Connection</h2>
-    <p>
-      Beyond symbolism, Kira exists because the creator genuinely loves red pandas.
-      The mascot reflects personal taste, emotional attachment, and identity rather
-      than corporate branding logic.
-    </p>
-
-    <p>
-      This personal connection reinforces the nature of 11 Mixtape as an individual,
-      human-driven project. It is not designed by committee, marketing strategy, or
-      trends, but by curiosity, care, and a desire to build something meaningful.
-    </p>
-
-    <h2>More Than a Mascot</h2>
-    <p>
-      Kira is intended to remain a long-term part of the project. As 11 Mixtape evolves,
-      the mascot may appear in documentation, tools, interfaces, or visual elements,
-      reinforcing continuity and identity across versions.
-    </p>
-
-    <p>
-      She is not a joke, not a placeholder, and not an afterthought. She is part of the
-      system’s personality.
-    </p>
-
-  </div>
-
-  <div class="footer">
-    © <b>11 Mixtape 2026</b> – <b>All forks or derivative works must retain this copyright notice</b>
-  </div>
+<footer>
+  © 11 Mixtape 2026
+</footer>
 
 </body>
 </html>
